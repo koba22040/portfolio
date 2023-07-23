@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 header ul {
     list-style: none;
     display: flex;
@@ -23,12 +24,22 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a:active {
-    color: #e6c510d1;
-    background-color: black;
+    font-weight: bold;
+    color: red;
+    background-color: #3399FF;
 }
 
 #home {
-    padding: 2rem 0;
+    
+    padding: 20rem 0;
+    background-image: url(IMG_0891.jpeg);
+    max-width: 100%;
+    background-size: cover;
+    color: white;
+    font-style: oblique;
+    background-position: c;
+    
+
 }
 #home h1 {
     text-align: center;
@@ -89,9 +100,14 @@ h2 {
     line-height: 5rem;
 }
 
+#works img {
+    max-width: 45%;
+    margin: 2rem;
+}
 
-
-
+footer {
+    margin: 2rem;
+}
 footer ul {
     list-style: none;
     display: flex;
@@ -107,6 +123,10 @@ footer ul li a {
     transition: all 0.3s;
 }
 
+footer ul li a:hover {
+    background: #3399FF;
+    transform: scale(1.5);
+}
 footer ul li a svg {
     width: 32px;
     height: 32px;
