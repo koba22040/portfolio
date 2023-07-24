@@ -29,6 +29,20 @@ header ul li a:active {
     background-color: #3399FF;
 }
 
+
+body{
+    animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+  }
+  
+  @keyframes bgchange{
+        0%   {background:#ffe6e1;}/*変化させたい色*/
+        25%  {background:#fdcb9e;}/*変化させたい色*/
+        50%  {background:#fdcbc1;}/*変化させたい色*/
+        75%  {background:#ffff8c;}/*変化させたい色*/
+        90%  {background:#b2dffb;}/*変化させたい色*/
+        100% {background:#ffe6e1;}/*変化させたい色*/
+   }
+
 #home {
     
     padding: 20rem 0;
@@ -43,9 +57,36 @@ header ul li a:active {
 }
 #home h1 {
     text-align: center;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
+@media (max-width: 768px) {
+    #about h3 {
+        text-align: center;
+    }
+
+    #about .text  img {
+        width: 330px;
+        height: 330px;
+        border-radius: 230px;
+        margin: auto;
+        display: block;
+        width: 45%;
+    }
+
+    #about .text {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+
+    #about img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+}
 
 h2 {
     margin: 4rem;
@@ -81,28 +122,38 @@ h2 {
     font-size: 1.5rem;
 }
 
-@media (max-width: 765px) {
-    #about img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
+
+
+
+
+@media (max-width: 768px) {
+    #skil p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    #works .img img {
+        display: flex;
+        flex-direction: column;
+        
+        position: relative;
+        left: 23%;
+        width: 90%;
+
+
     }
 }
-
-
-#skill {
-
-}
-
 #skil p {
     text-align: center;
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 5vw;
+    line-height: 8vw;
 }
 
-#works img {
+#works .img img {
     max-width: 45%;
     margin: 2rem;
+    
 }
 
 footer {
